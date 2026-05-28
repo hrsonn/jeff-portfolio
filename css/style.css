@@ -14,7 +14,7 @@ body {
 }
 
 ::selection {
-  background-color: rgba(168, 85, 247, 0.3);
+  background-color: rgba(0, 116, 228, 0.3);
   color: #fff;
 }
 
@@ -32,7 +32,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #6b21a8;
+  background: #0B409C;
 }
 
 #navbar.scrolled {
@@ -48,7 +48,7 @@ body {
 }
 
 #navbar .nav-link.active {
-  color: #a855f7;
+  color: #0074E4;
 }
 
 .avatar-placeholder {
@@ -128,7 +128,7 @@ body {
 }
 
 .skill-tag:hover {
-  background-color: rgba(168, 85, 247, 0.2);
-  border-color: rgba(168, 85, 247, 0.4);
+  background-color: rgba(0, 116, 228, 0.2);
+  border-color: rgba(0, 116, 228, 0.4);
   transform: translateY(-1px);
 }
