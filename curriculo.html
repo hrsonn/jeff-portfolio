@@ -16,7 +16,8 @@
       a { text-decoration: none; color: inherit; }
     }
     @media screen {
-      body { background: #e5e7eb; display: flex; justify-content: center; padding: 2rem; }
+      body { background: #e5e7eb; display: flex; justify-content: center; padding: 0.75rem; }
+      @media (min-width: 640px) { body { padding: 2rem; } }
       .a4-page { max-width: 210mm; width: 100%; box-shadow: 0 4px 20px rgba(0,0,0,0.15); }
     }
   </style>
@@ -25,7 +26,7 @@
   <div class="a4-page bg-white rounded-2xl overflow-hidden">
 
     <!-- Cabeçalho -->
-    <div class="bg-gradient-to-r from-[#0A065D] via-[#0B409C] to-[#0074E4] text-white px-8 py-7">
+    <div class="bg-gradient-to-r from-[#0A065D] via-[#0B409C] to-[#0074E4] text-white px-4 sm:px-8 py-7">
       <div class="flex items-center gap-6">
         <div class="w-20 h-20 rounded-full bg-white/20 flex items-center justify-center text-2xl font-bold shrink-0 border-2 border-white/40">
           <img src="assets/avatar.png" alt="" class="w-full h-full rounded-full object-cover" />
@@ -45,7 +46,7 @@
     <!-- Corpo -->
     <div class="flex flex-col md:flex-row">
       <!-- Sidebar -->
-      <div class="md:w-[32%] bg-gray-50 px-6 py-6 border-r border-gray-200">
+      <div class="md:w-[32%] bg-gray-50 px-4 sm:px-6 py-6 border-r border-gray-200">
         <section class="mb-6 print-break-inside">
           <h2 class="text-xs font-bold uppercase tracking-wider text-[#0B409C] mb-3"><i class="fas fa-user mr-1.5"></i>Resumo</h2>
           <p class="text-[11px] text-gray-600 leading-relaxed">
@@ -95,7 +96,7 @@
       </div>
 
       <!-- Principal -->
-      <div class="md:w-[68%] px-6 py-6">
+      <div class="md:w-[68%] px-4 sm:px-6 py-6">
         <section class="mb-6 print-break-inside">
           <h2 class="text-xs font-bold uppercase tracking-wider text-[#0B409C] mb-3"><i class="fas fa-briefcase mr-1.5"></i>Experiência Profissional</h2>
           <div class="space-y-4">
