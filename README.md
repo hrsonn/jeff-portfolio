@@ -106,13 +106,15 @@ Não requer configurações adicionais para publicação.
 
 ---
 
-## Personalizações Pendentes
+## Status do Projeto
 
-* [ ] Inserir foto profissional em `images/`
-* [ ] Substituir `curriculo-placeholder.pdf`
-* [ ] Revisar informações de contato
-* [ ] Ajustar conteúdos finais das seções
-* [ ] Inserir links oficiais (LinkedIn, e-mail e currículo)
+- ✅ Foto profissional inserida em `assets/avatar.png`
+- ✅ Imagem institucional em `assets/sobre.webmp.webp`
+- ✅ Logos: CBA, UNESP, ASQ, Bureau Veritas, Instituto de Engenharia
+- ✅ Informações de contato atualizadas (LinkedIn, e-mail)
+- ✅ Conteúdo ajustado (30+ anos, Black Belt, DFSS)
+- ✅ Links oficiais inseridos
+- ✅ Página de currículo em `curriculo.html` (imprimir como PDF)
 
 ---
 

@@ -123,12 +123,3 @@ body {
   transform: scale(1.3);
 }
 
-.skill-tag {
-  transition: all 0.2s ease;
-}
-
-.skill-tag:hover {
-  background-color: rgba(0, 116, 228, 0.2);
-  border-color: rgba(0, 116, 228, 0.4);
-  transform: translateY(-1px);
-}

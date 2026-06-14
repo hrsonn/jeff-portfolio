@@ -21,13 +21,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // --- Mobile menu toggle ---
   menuToggle.addEventListener('click', function () {
-    mobileMenu.classList.toggle('active');
+    const isActive = mobileMenu.classList.toggle('active');
     const icon = menuToggle.querySelector('i');
-    if (mobileMenu.classList.contains('active')) {
-      icon.className = 'fas fa-times text-xl';
-    } else {
-      icon.className = 'fas fa-bars text-xl';
-    }
+    icon.className = isActive ? 'fas fa-times text-xl' : 'fas fa-bars text-xl';
+    menuToggle.setAttribute('aria-expanded', isActive);
   });
 
   // Close mobile menu on link click
