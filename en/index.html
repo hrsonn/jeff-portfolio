@@ -37,7 +37,7 @@
           <a href="#projects" class="nav-link text-sm font-medium text-gray-300 hover:text-brand-blue transition-colors">Projects</a>
           <a href="#education" class="nav-link text-sm font-medium text-gray-300 hover:text-brand-blue transition-colors">Education</a>
           <a href="#contact" class="text-sm font-medium bg-brand-blue hover:bg-brand-navy px-4 py-2 rounded-lg transition-colors">Contact</a>
-          <a href="../" class="text-sm font-medium text-gray-300 hover:text-brand-blue transition-colors flex items-center gap-1" aria-label="Versão em Português">🇧🇷 PT</a>
+          <a href="../" class="text-sm font-medium text-gray-300 hover:text-brand-blue transition-colors flex items-center gap-1" aria-label="Versão em Português"><img src="../assets/brazil-flag-bandeira.png" alt="PT" class="w-5 h-auto inline-block"> PT</a>
         </div>
         <button id="menu-toggle" class="md:hidden text-gray-300 hover:text-white p-2" aria-expanded="false" aria-controls="mobile-menu">
           <i class="fas fa-bars text-xl"></i>
@@ -54,7 +54,7 @@
         <a href="#projects" class="nav-link block text-gray-300 hover:text-brand-blue transition-colors py-2">Projects</a>
         <a href="#education" class="nav-link block text-gray-300 hover:text-brand-blue transition-colors py-2">Education</a>
         <a href="#contact" class="block text-brand-blue hover:text-brand-blue transition-colors">Contact</a>
-        <a href="../" class="block text-gray-300 hover:text-brand-blue transition-colors py-2">🇧🇷 Português</a>
+        <a href="../" class="block text-gray-300 hover:text-brand-blue transition-colors py-2"><img src="../assets/brazil-flag-bandeira.png" alt="PT" class="w-5 h-auto inline-block"> Português</a>
       </div>
     </div>
   </nav>
@@ -62,10 +62,8 @@
   <!-- ==================== 1. HERO ==================== -->
   <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden">
     <div class="absolute inset-0 bg-gradient-to-br from-gray-950 via-brand-dark/20 to-gray-950"></div>
-    <div class="absolute inset-0">
-      <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-brand-blue/10 rounded-full blur-3xl"></div>
-      <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-brand-navy/10 rounded-full blur-3xl"></div>
-    </div>
+    <div class="hero-blob hero-blob-1"></div>
+    <div class="hero-blob hero-blob-2"></div>
     <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
       <div class="flex flex-col md:flex-row items-center gap-12">
         <div class="md:w-5/12 flex justify-center">
@@ -122,6 +120,13 @@
       </a>
     </div>
   </section>
+
+  <!-- Wave -->
+  <div class="wave-divider text-gray-900/50">
+    <svg viewBox="0 0 1440 50" preserveAspectRatio="none">
+      <path d="M0,25 C360,50 1080,0 1440,25 L1440,50 L0,50 Z" fill="currentColor"/>
+    </svg>
+  </div>
 
   <!-- ==================== 2. ABOUT ==================== -->
   <section id="about" class="py-12 md:py-20 bg-gray-900/50">
@@ -197,7 +202,7 @@
         <div class="w-20 h-1 bg-gradient-to-r from-brand-blue to-brand-navy mx-auto mt-4 rounded-full"></div>
       </div>
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="group bg-gray-800/30 border border-gray-700 rounded-2xl p-6 hover:border-brand-blue/50 hover:bg-gray-800/50 transition-all duration-300 reveal">
+        <div class="expertise-card group bg-gray-800/30 border border-gray-700 rounded-2xl p-6 hover:border-brand-blue/50 hover:bg-gray-800/50 transition-all duration-300 reveal">
           <div class="w-12 h-12 bg-brand-blue/20 rounded-xl flex items-center justify-center mb-4 group-hover:bg-brand-blue/30 transition-colors">
             <i class="fas fa-microchip text-brand-blue text-xl"></i>
           </div>
@@ -206,7 +211,7 @@
             Analysis, mapping, and optimization of industrial processes focusing on operational efficiency, cost reduction, and production variables control.
           </p>
         </div>
-        <div class="group bg-gray-800/30 border border-gray-700 rounded-2xl p-6 hover:border-brand-blue/50 hover:bg-gray-800/50 transition-all duration-300 reveal">
+        <div class="expertise-card group bg-gray-800/30 border border-gray-700 rounded-2xl p-6 hover:border-brand-blue/50 hover:bg-gray-800/50 transition-all duration-300 reveal">
           <div class="w-12 h-12 bg-brand-blue/20 rounded-xl flex items-center justify-center mb-4 group-hover:bg-brand-blue/30 transition-colors">
             <i class="fas fa-bolt text-brand-blue text-xl"></i>
           </div>
@@ -215,7 +220,7 @@
             In-depth experience in reduction processes, electrolytic cells, and aluminum metallurgy, focusing on stability and efficiency.
           </p>
         </div>
-        <div class="group bg-gray-800/30 border border-gray-700 rounded-2xl p-6 hover:border-brand-blue/50 hover:bg-gray-800/50 transition-all duration-300 reveal">
+        <div class="expertise-card group bg-gray-800/30 border border-gray-700 rounded-2xl p-6 hover:border-brand-blue/50 hover:bg-gray-800/50 transition-all duration-300 reveal">
           <div class="w-12 h-12 bg-brand-blue/20 rounded-xl flex items-center justify-center mb-4 group-hover:bg-brand-blue/30 transition-colors">
             <i class="fas fa-chart-simple text-brand-blue text-xl"></i>
           </div>
@@ -224,7 +229,7 @@
             Application of Black Belt, DFSS, Kaizen, and PDCA methodologies to transform operational challenges into measurable results.
           </p>
         </div>
-        <div class="group bg-gray-800/30 border border-gray-700 rounded-2xl p-6 hover:border-brand-blue/50 hover:bg-gray-800/50 transition-all duration-300 reveal">
+        <div class="expertise-card group bg-gray-800/30 border border-gray-700 rounded-2xl p-6 hover:border-brand-blue/50 hover:bg-gray-800/50 transition-all duration-300 reveal">
           <div class="w-12 h-12 bg-brand-blue/20 rounded-xl flex items-center justify-center mb-4 group-hover:bg-brand-blue/30 transition-colors">
             <i class="fas fa-leaf text-brand-blue text-xl"></i>
           </div>
@@ -233,7 +238,7 @@
             Leadership of projects with savings over 36 MW/year, anode effect reduction, and decreased industrial emissions.
           </p>
         </div>
-        <div class="group bg-gray-800/30 border border-gray-700 rounded-2xl p-6 hover:border-brand-blue/50 hover:bg-gray-800/50 transition-all duration-300 reveal">
+        <div class="expertise-card group bg-gray-800/30 border border-gray-700 rounded-2xl p-6 hover:border-brand-blue/50 hover:bg-gray-800/50 transition-all duration-300 reveal">
           <div class="w-12 h-12 bg-brand-blue/20 rounded-xl flex items-center justify-center mb-4 group-hover:bg-brand-blue/30 transition-colors">
             <i class="fas fa-robot text-brand-blue text-xl"></i>
           </div>
@@ -242,7 +247,7 @@
             Process control, KPI management, and development of technological solutions for industrial automation and digitalization.
           </p>
         </div>
-        <div class="group bg-gray-800/30 border border-gray-700 rounded-2xl p-6 hover:border-brand-blue/50 hover:bg-gray-800/50 transition-all duration-300 reveal">
+        <div class="expertise-card group bg-gray-800/30 border border-gray-700 rounded-2xl p-6 hover:border-brand-blue/50 hover:bg-gray-800/50 transition-all duration-300 reveal">
           <div class="w-12 h-12 bg-brand-blue/20 rounded-xl flex items-center justify-center mb-4 group-hover:bg-brand-blue/30 transition-colors">
             <i class="fas fa-lightbulb text-brand-blue text-xl"></i>
           </div>
@@ -254,6 +259,13 @@
       </div>
     </div>
   </section>
+
+  <!-- Wave -->
+  <div class="wave-divider text-gray-950">
+    <svg viewBox="0 0 1440 50" preserveAspectRatio="none">
+      <path d="M0,0 C360,50 1080,50 1440,0 L1440,50 L0,50 Z" fill="currentColor"/>
+    </svg>
+  </div>
 
   <!-- ==================== 4. PROFESSIONAL CAREER ==================== -->
   <section id="career" class="py-12 md:py-20 bg-gray-900/50">
@@ -421,6 +433,27 @@
     </div>
   </section>
 
+  <!-- ==================== INSTITUTIONAL LOGOS SCROLL ==================== -->
+  <section class="py-12 border-t border-gray-800/50 overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-6">
+      <p class="text-center text-sm text-gray-500 uppercase tracking-widest">Institutions & Certifications</p>
+    </div>
+    <div class="logo-scroll-wrapper relative">
+      <div class="logo-scroll-track">
+        <div class="logo-scroll-item"><img src="../assets/cba.jpg" alt="CBA" /></div>
+        <div class="logo-scroll-item"><img src="../assets/unesp.svg" alt="UNESP" /></div>
+        <div class="logo-scroll-item"><img src="../assets/ASQ.jpg" alt="ASQ" /></div>
+        <div class="logo-scroll-item"><img src="../assets/bureau-veritas.png" alt="Bureau Veritas" /></div>
+        <div class="logo-scroll-item"><img src="../assets/instituto engenharia.png" alt="Instituto de Engenharia" /></div>
+        <div class="logo-scroll-item"><img src="../assets/cba.jpg" alt="CBA" /></div>
+        <div class="logo-scroll-item"><img src="../assets/unesp.svg" alt="UNESP" /></div>
+        <div class="logo-scroll-item"><img src="../assets/ASQ.jpg" alt="ASQ" /></div>
+        <div class="logo-scroll-item"><img src="../assets/bureau-veritas.png" alt="Bureau Veritas" /></div>
+        <div class="logo-scroll-item"><img src="../assets/instituto engenharia.png" alt="Instituto de Engenharia" /></div>
+      </div>
+    </div>
+  </section>
+
   <!-- ==================== 6. PROJECTS AND RESULTS ==================== -->
   <section id="projects" class="py-12 md:py-20 bg-gray-900/50">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -430,7 +463,7 @@
         <div class="w-20 h-1 bg-gradient-to-r from-brand-blue to-brand-navy mx-auto mt-4 rounded-full"></div>
       </div>
       <div class="max-w-4xl mx-auto">
-        <div class="bg-gray-800/30 border border-gray-700 rounded-2xl overflow-hidden group hover:border-brand-blue/50 transition-all duration-300 reveal">
+        <div class="glow-card bg-gray-800/30 border border-gray-700 rounded-2xl overflow-hidden group hover:border-brand-blue/50 transition-all duration-300 reveal">
           <div class="h-2 bg-gradient-to-r from-brand-blue to-brand-navy"></div>
           <div class="p-6">
             <div class="flex items-center gap-2 mb-4">
@@ -544,6 +577,13 @@
       </div>
     </div>
   </section>
+
+  <!-- Wave -->
+  <div class="wave-divider text-gray-950">
+    <svg viewBox="0 0 1440 50" preserveAspectRatio="none">
+      <path d="M0,0 L1440,0 L1440,50 L0,50 Z" fill="currentColor"/>
+    </svg>
+  </div>
 
   <!-- ==================== 8. CONTACT ==================== -->
   <section id="contact" class="py-12 md:py-20 bg-gray-900/50">
